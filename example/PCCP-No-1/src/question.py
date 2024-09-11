@@ -1,6 +1,5 @@
-
+癤�
 # https://school.programmers.co.kr/learn/courses/30/lessons/250137
-
 
 def solution(bandage, health, attacks):
     maxhealth = health
@@ -19,7 +18,6 @@ def solution(bandage, health, attacks):
             health -= attack_dict[t]
             continue_sec=0
 
-            # 공격을 맞고 체력이 -1
             if health <=0:
                 return -1
 

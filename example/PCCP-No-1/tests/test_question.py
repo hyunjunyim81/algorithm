@@ -1,12 +1,13 @@
-import sys
-import os
+from src import question
 
-sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+def test_question_case1():    
+    result = question.solution([5, 1, 5], 30, [[2, 10], [9, 15], [10, 5], [11, 5]])
+    assert result == 5
 
-from src import q
-
-def inc(x):
-    return x + 1
-
-def test_answer_1():
-    assert inc(3) == 5
+def test_question_case2():    
+    result = question.solution(	[3, 2, 7], 20, [[1, 15], [5, 16], [8, 6]])
+    assert result == -1
+    
+def test_question_case3():    
+    result = question.solution([4, 2, 7], 20, [[1, 15], [5, 16], [8, 6]])
+    assert result == -1
