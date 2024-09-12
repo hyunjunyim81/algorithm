@@ -1,4 +1,4 @@
-from src import question
+from src.pccp_no_1 import question
 
 def test_question_case1():    
     result = question.solution([5, 1, 5], 30, [[2, 10], [9, 15], [10, 5], [11, 5]])
